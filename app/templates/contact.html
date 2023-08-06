@@ -1,0 +1,71 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'index.css'%}">
+    <script src="https://kit.fontawesome.com/a7d20ff54b.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+
+<body>
+
+    <div class="contact-container col-md-12" id="contact-con">
+        <div class="row">
+            <div class="col-md-5 left-contact-container">
+                <div class="align-item">
+                    <h1>Contact Me</h1>
+                    <div class="contact-detail">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <p>shubhamsharma20007@gmail.com</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>7073830702</p>
+                    </div>
+                    <div class="contact-detail contact-icon col-md-4">
+                        <a href="https://www.facebook.com/jazz.shubham.3"><i class="fa-brands fa-facebook"></i></a>
+                        <i class="fa-brands fa-twitter"></i>
+                        <a href="https://instagram.com/shubx.__?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shubham-sharma-8a625a237"><i class="fa-brands fa-linkedin"></i> </i></a>
+                    </div>
+
+                    <div class="outer-border cv-container col-md-6">
+                        <p>Download CV</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-7 left-contact-container">
+                <div class="center-right-container col-md-10">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Your Name" name="name" id='name'>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control " aria-describedby="emailHelp" placeholder="Enter Your Email" name="email" id="email">
+                        </div>
+                        <div class="form-check container-check">
+                            <textarea placeholder="Do You Want Say Something..." class="form-control" rows="3" name="text" id="text"></textarea>
+                        </div>
+                        <div class="btn-container">
+                            <button type="submit" class="btn btn-transparent btn-btn ">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<!-- Shaking  Script -->
+
+
+
+</html>

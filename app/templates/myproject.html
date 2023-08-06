@@ -1,0 +1,105 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Skills</title>
+    <link rel="stylesheet" href="{% static 'index.css'%}">
+    <script src="https://kit.fontawesome.com/a7d20ff54b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="project-container col-md-12" id="project-container">
+        <div class="row  ">
+            <div class="title-project-container col-md-5">
+                <h1 class="text-center"> My Services</h1>
+            </div>
+            <div class="parent-container">
+                <div class="row card-container col-md-11" id="card-content">
+                    <div class="first-card col-md-3" id="first-card">
+                        <i class="fa-brands fa-android fa-2x"></i>
+                        <h4>App Development</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde earum consequuntur corrupti nam magnam illum ad nemo, animi ab? At.</p>
+                    </div>
+                    <div class="second-card col-md-3" id="second-card">
+                        <i class="fa-solid fa-code fa-2x"></i>
+                        <h4>Web Development</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde earum consequuntur corrupti nam magnam illum ad nemo, animi ab? At.</p>
+                    </div>
+                    <div class="third-card col-md-3" id="third-card">
+                        <i class="fa-solid fa-layer-group fa-2x"></i>
+                        <h4>UI/UX Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde earum consequuntur corrupti nam magnam illum ad nemo, animi ab? At.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project-container col-md-12" id="work-cont">
+        <div class="row  ">
+            <div class="title-project-container col-md-5">
+                <h1 class="text-center"> My Work</h1>
+            </div>
+            <div class="parent-container">
+                <div class="row card-container col-md-11">
+                    <div class="first-img col-md-3">
+                        <img src="../static/images/ims2.jpg" width="100%" alt="" class="img-fluid">
+                        <div class="content-icons">
+                            <i class="fa-solid fa-heart fa-2x"></i>
+                            <i class="fa-solid fa-share fa-2x"></i>
+                            <i class="fa-solid fa-download fa-2x"></i>
+                        </div>
+                        <div class="content-paragraphs col-md-12">
+                            <h5>Inventory Management System (IMS Tool)</h5>
+                            <p>I created this tool for manage the Company inverntory in which have a feature's as a item add,update,delete moreover we can add/create the user, put the specify permission be like user ,admin,superuser</p>
+                        </div>
+                    </div>
+                    <div class="second-img col-md-3">
+                        <img src="../static/images/appdev.jpg" width="100%" alt="" class="img-fluid" loading="fast">
+                        <div class="content-icons">
+                            <i class="fa-solid fa-heart fa-2x"></i>
+                            <i class="fa-solid fa-share fa-2x"></i>
+                            <i class="fa-solid fa-download fa-2x"></i>
+                        </div>
+                        <div class="content-paragraphs col-md-12">
+                            <h5>Encording To Decording Text By Python</h5>
+                            <p>Convert normal text to Encryption format. it just a normal text converter application </p>
+                        </div>
+
+                    </div>
+                    <div class="third-img col-md-3">
+                        <img src="../static/images/website.jpg" width="100%" alt="" class="img-fluid">
+                        <div class="content-icons">
+                            <i class="fa-solid fa-heart fa-2x"></i>
+                            <i class="fa-solid fa-share fa-2x"></i>
+                            <i class="fa-solid fa-download fa-2x"></i>
+                        </div>
+                        <div class="content-paragraphs col-md-12">
+                            <h5>Website Development</h5>
+                            <p>Created a Website <a href="#" style="font-size: 15px;"> Sclaeedge Solution </a> By Using pure React & Bootstrap 5</p>
+                        </div>
+                    </div>
+
+                    <div class="seemore-container col-md-12">
+                        <div class="outer-border col-md-1">
+                            <p>See More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'contact.html' %}
+
+
+
+
+</body>
+
+</html>

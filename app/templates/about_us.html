@@ -1,0 +1,85 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'index.css'%}">
+</head>
+
+<body>
+    <div class="about-container col-md-12" id="about-container-id">
+        <div class="row">
+            <div class="about-left-container col-md-5">
+                <div class="img-partitions col-md-5">
+                    <img src="../static/images/personal.jpg" class="img-fluid" width="100%" alt="">
+                </div>
+            </div>
+            <div class="about-right-container col-md-7" id="about-content">
+                <div class="content-partition col-md-4 opacity-none" id="content-par">
+                    <h1>About Me</h1>
+                </div>
+                <div class="content-paragraph" id="content-pra">
+                    <p id="paragraph-id">Hey, I am Shubham Sharma from Alwar rajasthan,i have done 2 year experience currently i am doing job as a full stack web developer in Scaleedge Solution before i joined this job my job profile was as a data analyst in Oneklick Techno
+                        Renewable, I did complete my graduction and pursuing a MCA from UOT(university of Technology,Jaipur) apart from that i am so willingness for coding ! </p>
+                    <div class="skill-submenu col-md-6">
+                        <p class="para" onclick="ShowSection('skill-details')">Skills</p>
+                        <p class="para2" onclick="ShowSection('exp-details')">Experience</p>
+                        <p class="para3" onclick="ShowSection('edu-details')">Education</p>
+
+                    </div>
+                    <div class="skill-detail-container col-md-7" id="skill-details" style="display: none">
+                        <ul>
+                            <li>UI/UX</li>
+                            <p> Designing of Web/App</p>
+                            <li>Web Developerment</li>
+                            <p> Handling Frontend/Backend</p>
+                            <li>Data Anlysis</li>
+                            <p> Using ML,Python Library's & Power Bi</p>
+                        </ul>
+                    </div>
+                    <div class="skill-detail-container col-md-7" id="exp-details" style="display:none">
+                        <ul>
+                            <li>Scaleedge Solution - Alwar</li>
+                            <p> Web Developerment - In present</p>
+                            <li>OneKlick Techno Renewable - Alwar</li>
+                            <p> Data Analyst - 6 Months</p>
+                            <li>Hero MotoCorp Limited - Gujarat</li>
+                            <p> System Administrator - 1.1 Year</p>
+                        </ul>
+                    </div>
+                    <div class="skill-detail-container col-md-7" id="edu-details" style="display:none">
+                        <ul>
+                            <li>Master of Computer Application - MCA</li>
+                            <p> Pursuing of Computer Science form Jaipur University</p>
+                            <li>Bechlor of Arts - BA</li>
+                            <p> I have Been Complete BA form Alwar</p>
+                            <li>Certification</li>
+                            <p> Full Stack Developer Certification - 2023</p>
+                            <p> Data Analyst Certification by Google - 2022</p>
+                        </ul>
+                    </div>
+                    <div class="skill-detail-container col-md-6" id="certi-details" style="display:none">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'myproject.html' %}
+</body>
+<script>
+    function ShowSection(sectionid) {
+        const section = ['skill-details', 'exp-details', 'edu-details']
+        section.forEach(function(sec) {
+            document.getElementById(sec).style.display = "none"
+        })
+        document.getElementById(sectionid).style.display = "block"
+    }
+</script>
+
+</html>
