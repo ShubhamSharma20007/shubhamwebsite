@@ -279,6 +279,7 @@ html {
 
 .title-project-container h1 {
     text-align: end;
+    color: var(--text-color);
 }
 
 .card-container {
@@ -291,6 +292,7 @@ html {
 .parent-container {
     display: flex;
     justify-content: center;
+    transition: all 0.2s ease;
 }
 
 .card-container i,
@@ -301,6 +303,7 @@ html {
 
 .card-container p {
     color: var(--paragraph-color);
+    background-color: transparent !important;
 }
 
 .first-card h4,
@@ -667,7 +670,6 @@ html {
     z-index: 2;
     animation: Unshape 25s infinite;
     border: 2px solid;
-    margin: 60px;
     z-index: 20;
     border: 2px double var(--text-color);
 }

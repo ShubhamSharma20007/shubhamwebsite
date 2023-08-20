@@ -49,8 +49,10 @@
                 <img src="../static/images/unsplahs.jpg" alt="" class="larptop-img img-fluid">
             </div>
         </div>
+
         {% include 'about_us.html' %}
     </div>
+
 
 
 
@@ -195,7 +197,30 @@
     })
 </script>
 
-<script>
+<!-- <script>
+    gsap.to(".row ", {
+        backgroundColor: 'white',
+        scrollTrigger: {
+            trigger: ".parent-container",
+            scroller: '#main',
+            start: 'top 30%',
+            end: 'top 80%',
+            scrub: 2
+        }
+    })
 </script>
+
+<script>
+    gsap.to(".card-container ", {
+        backgroundColor: 'white',
+        scrollTrigger: {
+            trigger: ".card-container",
+            scroller: '#main',
+            start: 'top 30%',
+            end: 'top 50%',
+            scrub: 2
+        }
+    })
+</script> -->
 
 </html>
